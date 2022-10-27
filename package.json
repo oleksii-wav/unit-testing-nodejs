@@ -1,0 +1,29 @@
+{
+  "name": "unit-testing-project",
+  "version": "1.0.0",
+  "description": "a simple unit testing project",
+  "main": "1.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksii-wav/unit-testing-nodejs.git"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "test"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksii-wav/unit-testing-nodejs/issues"
+  },
+  "homepage": "https://github.com/oleksii-wav/unit-testing-nodejs#readme",
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^10.1.0"
+  }
+}
