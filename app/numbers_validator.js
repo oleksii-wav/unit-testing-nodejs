@@ -20,7 +20,7 @@ class NumbersValidator {
    */
   isNumberEven(number) {
     const typeOfVariable = typeof number;
-    if (typeOfVariable !== number) {
+    if (typeOfVariable !== 'number') {
       // eslint-disable-next-line max-len
       throw new Error(number + ' is not of type "Number". It is of type ' + typeOfVariable);
     } else {
