@@ -1,12 +1,12 @@
 /**
  *
  *a math operations class
- * @class mathOperations
+ * @class MathOperations
  */
-class mathOperations {
+class MathOperations {
   /**
    * Creates an instance of mathOperations.
-   * @memberof mathOperations
+   * @memberof MathOperations
    */
   constructor() {
   }
@@ -17,15 +17,16 @@ class mathOperations {
    * @param {Number} a first number to add
    * @param {Number} b second number to add
    * @return {Number} sum ot two numbers
-   * @memberof mathOperations
+   * @memberof MathOperations
    */
   add(a, b) {
-    if (typeof a != 'number') {
-      throw new Error(a + ' is not of type "Number".')
+    if (typeof a != 'number' && typeof b != 'number') {
+      throw new Error('Both variables are not of type "Number".');
+    } else if (typeof a != 'number') {
+      throw new Error(a + ' is not of type "Number".');
     } else if (typeof b != 'number') {
-      throw new Error(b + ' is not of type "Number".')
-    }
-    return a + b;
+      throw new Error(b + ' is not of type "Number".');
+    } return a + b;
   };
 
   /**
@@ -34,16 +35,17 @@ class mathOperations {
    * @param {Number} a first multiplier
    * @param {Number} b first multiplier
    * @return {Number} the result of multiply
-   * @memberof mathOperations
+   * @memberof MathOperations
    */
   multiply(a, b) {
-    if (typeof a != 'number') {
+    if (typeof a != 'number' && typeof b != 'number') {
+      throw new Error('Both variables are not of type "Number".');
+    } else if (typeof a != 'number') {
       throw new Error(a + ' is not of type "Number".');
     } else if (typeof b != 'number') {
       throw new Error(b + ' is not of type "Number".');
-    }
-    return a + b;
+    } else return a * b;
   };
 };
 
-module.exports = mathOperations;
+module.exports = MathOperations;
