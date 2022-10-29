@@ -45,16 +45,3 @@ describe('isNumberEven negative scenatios', () =>{
   });
 });
 
-describe('getEvenNumbersFromArray positive scenarios', () => {
-  let validator;
-  beforeEach(() => {
-    validator = new NumbersValidator();
-  });
-  afterEach(() => {
-    validator = undefined;
-  });
-
-  it('Should return an array of even numbers', () => {
-    expect(validator.getEvenNumbersFromArray([1, 2, 3, 4, 5])).to.eqls([2, 4]);
-  });
-});
